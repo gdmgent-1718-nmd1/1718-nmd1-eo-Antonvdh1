@@ -1,14 +1,196 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Digital Styleguide - Eindopdracht NMD-I</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/pages.css">
+    <title>Anton Van Den Hende</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <h1>Digital Styleguide</h1>
+
+<div class="styleguideC">
+    <header class="headerstyleguide">
+        <h1 class="uppercase bold" style="color: white; font-size: 2rem; ">styleguide</h1>
+    </header>
+    <div class="styleGuide"> 
+    <button class="uppercase button">Tickets</button>
+    <h1 class="uppercase textHover bold">Tickets</h1>
+    <img src="assets/img/country.png" alt="country" class="imgHover" height="100">
+    <div class="hamburgerMenu">
+        <div class="cirkel"><p>X</p></div>
+        <div class="unfold hidden"><p class="uppercase textunfold">HOME</p></div>
+    </div>
+    </div>
+    <div class="technical">
+       <h1 class="titelT">All Fonts + colors</h1>
+        <p> 
+               <span class="spanTech bold uppercase"> titles:</span> .title { color: #707070; font-size: 120px; font-family: 'Raleway', sans-serif; } <br>
+                
+               <span class="spanTech bold uppercase">Extra big titles:</span> .Extrabigtitle { color: #707070; opacity: 0.1; font-size: 1000px; font-family: 'Raleway', sans-serif; } <br>
+                
+               <span class="spanTech bold uppercase">intermediate titles:</span> .mediumtext { color: #707070; font-size: 57px; font-family: 'Raleway', sans-serif; }<br>
+                
+               <span class="spanTech bold uppercase"> Normal text:</span> .normaltext { color: #707070; font-size: 35px; font-family: 'Raleway', sans-serif; }<br>
+                
+               <span class="spanTech bold uppercase">Big numbers:</span> .bignummer { color: #2FA884; font-size: 500px; font-family: 'Raleway', sans-serif; }<br>
+                
+               <span class="spanTech bold uppercase">Extra big numbers:</span> .Extrabignumbers {color: #2FA884; opacity: 0.1; font-size: 1000px; font-family: 'Raleway', sans-serif; }<br>
+                
+               <span class="spanTech bold uppercase">Link for font:</span> link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet"<br>
+               
+               <span class="spanTech bold uppercase">colors:</span> color: green: hex #2FA884 rgb: 47-168-132 HSB: 160-71-65 ; gray: #707070 rgb: 112-112-112 HSB: 160-0-43; white: #ffffff  rgb: 255-255-255 HSB: 160-0-100; black: #000000 rgb: 0-0-0 HSB: 160-0-0 <br>
+               
+               <span class="spanTech bold uppercase">Pictures:</span> img src="images/party.jpg" alt="party" title="Dancing people" class="party"/ <br> <br>
+
+               <span class="spanTech bold uppercase">CSS codes:</span> 
+               
+             <p>  .button{
+                padding: 1rem;
+                color: white;
+                background-color: #06907c;
+                border: none;
+                border-radius: 50px;
+                font-family: 'IBM Plex Sans';
+                width: 150px;
+                height: 50px;
+                font-size: 1rem;
+            }
+            </p> <br>
+            
+            <p>
+            .button:hover{
+                background: grey;
+                color: #099b7c;
+            }
+            </p><br>
+
+            
+            <p>.textHover{
+                font-size: 1rem;
+                height: 1.4rem;
+            }
+            .textHover:hover{
+                border-bottom: 2px solid #06907c;
+            }
+            </p> <br>
+
+            <p>
+            .styleGuide{
+                width: 960px;
+                height: 500px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 2rem;
+                justify-content: space-around;
+                align-items: center;
+            }
+            </p> <br>
+
+            <p>                
+            .imgHover{
+                opacity: .5;
+            }
+            </p> <br>
+            
+            <p>
+            .imgHover:hover{
+                opacity: 1;
+            }
+            .styleGuideC{
+                display: flex;
+                flex-direction: column;
+            }
+            </p> <br>
+
+            <p>
+            .headerstyleguide{
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #06907c;
+            }
+
+            </p> <br>
+
+            <p>
+            .cirkel{
+                height: 50px; 
+                width: 50px; 
+                background-color: #099b7c; 
+                border-radius: 25px;
+                font-size: 1.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+            }
+            </p> <br>
+
+            <p>
+            .unfold{
+                height: 50px;
+                width: 150px;
+                background: lightgrey;
+                border-radius: 25px;
+            }
+            </p> <br>
+
+            <p>
+            .textunfold{
+                margin-left: 60px;
+                padding-top: 15px;
+            }
+            </p> <br>
+
+            <p>
+            .hidden{
+                visibility: hidden;
+            }
+            </p> <br>
+           
+            <p>
+            .technical{
+                margin: 0 auto;
+                width: 960px;
+                display: flex;
+                flex-direction: column;
+                line-height: 120%;
+            
+            }
+
+            </p> <br>
+            
+            <p>
+            .spanTech{
+                color: #06907c; 
+                text-align: left;
+            }
+            </p> <br>
+            
+            <p>
+            .titelT{
+                font-size: 3rem;
+                margin-bottom: 3rem;
+                align-self: center;
+            } 
+            </p>
+            <br>
+<br> 
+
+            </p>
+
+
+
+    </div>
+</div>
+
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
